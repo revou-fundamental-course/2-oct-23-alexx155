@@ -9,15 +9,20 @@
             <h1>Kalkulator Suhu</h1>
         </header>
         <main>
-            <section class="input-section">
-                <label for="input_field">Celcius</label>
-                <input id="input_field" type="number" placeholder="0">
+            <div class="input-section">
+                <label for="inpCelcius">Masukkan nilai suhu</label>
+                <input id="inpC" type="number" placeholder="Celcius">
                 <div id="input-button">
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Reverse</button>
+                    <button onclick="konversi()">Konversi</button>
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="reverse()">Reverse</button>
                 </div>
-            </section>
+                <div class="output">
+                    <p id="hasil">Fahrenheit</p>
+                    <p id="penjelasan">Penjelasan</p>
+                </div>
+            </div>
         </main>
+    <script src="js/script.js"></script>
     </body>
 </html>
